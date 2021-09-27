@@ -1,0 +1,101 @@
+<p>Dear Dr/Mr/Ms {{name}},<br> Thank you for enquiring with us. The details of the products enquiry are as below:<br><br></p>
+
+
+<table border="1">
+<thead>
+<tr>
+<th class="cart-product-name">CAS</th>
+<th class="cart-product-subtotal">Chemical Name</th>
+<th class="cart-product-quantity">Pack</th>
+<th class="cart-product-price">Quantity</th>
+<th class="cart-product-price">Price</th>
+<th class="cart-product-gst">GST</th>
+<th class="cart-product-hsn">Amount</th>
+</tr>
+</thead>
+<tbody>
+{% for d in cart%}
+<tr class="cart_item">
+<!-- <td class="cart-product-thumbnail">
+<a href="#"><img width="64" height="64" src="images/shop/thumbs/small/dress-3.jpg" alt="Pink Printed Dress"></a>
+</td> -->
+<td class="cart-product-subtotal">
+{{d['cas']}}
+</td>
+<td class="cart-product-name">
+{{d['name']}}
+</td>
+<td class="cart-product-quantity">
+{{d['pack']}}
+</td>
+<td class="cart-product-quantity">
+{{d['quantity']}}
+</td>
+<td class="cart-product-price">
+<span class="amount">{{d['price']}}</span>
+</td>
+<td class="cart-product-gst">
+<span>{{d['gst']}}</span>
+</td>
+<td class="cart-product-hsn">
+<span>{{d['amount']}}</span>
+</td>
+</tr>
+{% endfor%}
+
+</tbody>
+</table>
+
+<h4>Cart Total</h4>
+
+<table border="1">
+<tbody>
+<tr class="cart_item">
+<td class="cart-product-name">
+<strong>Cart Subtotal</strong>
+</td>
+<td class="cart-product-name">
+<span class="amount">{{total}}</span>
+</td>
+</tr>
+<tr class="cart_item">
+<td class="cart-product-name">
+<strong>Gst</strong>
+</td>
+<td class="cart-product-name">
+<span class="amount">{{gsttotal}}</span>
+</td>
+</tr>
+<tr class="cart_item">
+<td class="cart-product-name">
+<strong>Total</strong>
+</td>
+<td class="cart-product-name">
+<span class="amount color lead"><strong>{{gtotal}}</strong></span>
+</td>
+</tr>
+</tbody>
+</table>
+
+<br><br>
+
+Kindly contact us in case any clarification is required. <br>
+
+Contact details provided by you are:<br><br>
+
+Name - {{name}}<br>
+Company Name - {{cname}}<br>
+Phone no - {{mob}}<br>
+Email - {{email}}<br><br>
+
+Our executive may contact you shortly. <br><br>
+
+<b>You can contact us at:</b><br>
+
+Mobile - +91 9821258751 / +91 8527209426<br>
+Email - info@spectevo.com<br><br>
+
+Regards,<br>
+Spectevo Technologies Pvt. Ltd.<br>
+<img src="http://spectevo.com/static/images/logo-resto.png" width="180"/>
+

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="SemiColonWeb" />
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+		<link rel="stylesheet" href="/static/css/dark.css" type="text/css" />
+		<link rel="stylesheet" href="/static/css/font-icons.css" type="text/css" />
+		<link rel="stylesheet" href="/static/css/animate.css" type="text/css" />
+		<link rel="stylesheet" href="/static/css/magnific-popup.css" type="text/css" />
+		<link rel="stylesheet" href="/static/css/responsive.css" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="stylesheet" type="text/css" href="/static/css/settings.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/static/css/layers.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+		<link rel="manifest" href="/static/images/site.webmanifest">
+
+		<title>Spectevo Technologies</title>
+		<style>
+		
+				.revo-slider-emphasis-text {
+					font-size: 64px;
+					font-weight: 700;
+					letter-spacing: -1px;
+					font-family: 'Raleway', sans-serif;
+					padding: 15px 20px;
+					border-top: 2px solid #FFF;
+					border-bottom: 2px solid #FFF;
+				}
+		
+				.revo-slider-desc-text {
+					font-size: 20px;
+					font-family: 'Lato', sans-serif;
+					width: 650px;
+					text-align: center;
+					line-height: 1.5;
+				}
+		
+				.revo-slider-caps-text {
+					font-size: 16px;
+					font-weight: 400;
+					letter-spacing: 3px;
+					font-family: 'Raleway', sans-serif;
+				}
+				.tp-video-play-button { display: none !important; }
+		
+				.tp-caption { white-space: nowrap; }
+		
+			</style>
+		</head>
+{%if popup == 1%}
+<body onload="myFunction()" class="stretched side-push-panel">
+
+{% else %}
+<body class="stretched side-push-panel">
+{% endif %}
+
+<script>
+function myFunction() {
+  alert('{{msg}}');
+}
+</script>
+<div class="body-overlay"></div>
+<div id="side-panel" class="dark">
+<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
+<div class="side-panel-wrap">
+<div class="widget widget_links clearfix">
+<h4>About Spectevo</h4>
+<div style="font-size: 14px; line-height: 1.7;">
+<address style="line-height: 1.7;">
+Spectevo Technologies, Block 1<br>P & T Colony, Raj Nagar<br>Ghaziabad, Uttar Pradesh 201002<br>
+</address>
+<div class="clear topmargin-sm"></div>
+<abbr title="Phone Number">Phone:</abbr> (91) 8527790623<br>(91) 7428142900<br>
+<abbr title="Email Address">Email:</abbr> info@spectevo.in
+</div>
+</div>
+</div>
+</div>
+
+<div id="wrapper" class="clearfix">
+
+	<header id="header" class="full-header sticky-header">
+		<div id="header-wrap">
+		<div class="container clearfix">
+		<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+		
+		<div id="logo">
+		<a href="/" class="standard-logo" data-dark-logo="/static/images/canvasone-dark.png"><img src="/static/images/canvasone.png"></a>
+		<a href="/" class="retina-logo" data-dark-logo="/static/images/canvasone-dark@2x.png"><img src="/static/images/canvasone%402x.png"></a>
+		</div>
+		
+		<nav id="primary-menu" class="style-5">
+			<ul class="norightborder norightpadding norightmargin">
+			<li class="current"><a href="#"><div><i class="icon-home2"></i>Home</div></a>
+			<!-- <ul>
+			<li><a href="index-corporate.html"><div>Home - Corporate</div></a>
+			<ul>
+			<li><a href="index-corporate.html"><div>Corporate - Layout 1</div></a></li>
+			<li><a href="index-corporate-2.html"><div>Corporate - Layout 2</div></a></li>
+			<li><a href="index-corporate-3.html"><div>Corporate - Layout 3</div></a></li>
+			<li><a href="index-corporate-4.html"><div>Corporate - Layout 4</div></a></li>
+			</ul>
+			</li>
+			<li><a href="index-portfolio.html"><div>Home - Portfolio</div></a>
+			<ul>
+			<li><a href="index-portfolio.html"><div>Portfolio - Layout 1</div></a></li>
+			<li><a href="index-portfolio-2.html"><div>Portfolio - Layout 2</div></a></li>
+			<li><a href="index-portfolio-3.html"><div>Portfolio - Masonry</div></a></li>
+			<li><a href="index-portfolio-4.html"><div>Portfolio - AJAX</div></a></li>
+			</ul>
+			</li>
+			<li><a href="index-blog.html"><div>Home - Blog</div></a>
+			<ul>
+			<li><a href="index-blog.html"><div>Blog - Layout 1</div></a></li>
+			<li><a href="index-blog-2.html"><div>Blog - Layout 2</div></a></li>
+			<li><a href="index-blog-3.html"><div>Blog - Layout 3</div></a></li>
+			</ul>
+			</li>
+			<li><a href="index-shop.html"><div>Home - Shop</div></a>
+			<ul>
+			<li><a href="index-shop.html"><div>Shop - Layout 1</div></a></li>
+			<li><a href="index-shop-2.html"><div>Shop - Layout 2</div></a></li>
+			</ul>
+			</li>
+			<li><a href="index-magazine.html"><div>Home - Magazine</div></a>
+			<ul>
+			<li><a href="index-magazine.html"><div>Magazine - Layout 1</div></a></li>
+			<li><a href="index-magazine-2.html"><div>Magazine - Layout 2</div></a></li>
+			<li><a href="index-magazine-3.html"><div>Magazine - Layout 3</div></a></li>
+			</ul>
+			</li>
+			<li><a href="landing.html"><div>Home - Landing Page</div></a>
+			<ul>
+			<li><a href="landing.html"><div>Landing Page - Layout 1</div></a></li>
+			<li><a href="landing-2.html"><div>Landing Page - Layout 2</div></a></li>
+			<li><a href="landing-3.html"><div>Landing Page - Layout 3</div></a></li>
+			<li><a href="landing-4.html"><div>Landing Page - Layout 4</div></a></li>
+			<li><a href="landing-5.html"><div>Landing Page - Layout 5</div></a></li>
+			</ul>
+			</li>
+			<li><a href="index-fullscreen-image.html"><div>Home - Full Screen</div></a>
+			<ul>
+			<li><a href="index-fullscreen-image.html"><div>Full Screen - Image</div></a></li>
+			<li><a href="index-fullscreen-slider.html"><div>Full Screen - Slider</div></a></li>
+			<li><a href="index-fullscreen-video.html"><div>Full Screen - Video</div></a></li>
+			</ul>
+			</li>
+			<li><a href="index-onepage.html"><div>Home - One Page</div></a>
+			<ul>
+			<li><a href="index-onepage.html"><div>One Page - Default</div></a></li>
+			<li><a href="index-onepage-2.html"><div>One Page - Submenu</div></a></li>
+			<li><a href="index-onepage-3.html"><div>One Page - Dots Style</div></a></li>
+			</ul>
+			</li>
+			<li><a href="index-wedding.html"><div>Home - Wedding</div></a></li>
+			<li><a href="index-restaurant.html"><div>Home - Restaurant</div></a></li>
+			<li><a href="index-events.html"><div>Home - Events</div></a></li>
+			<li><a href="index-parallax.html"><div>Home - Parallax</div></a></li>
+			<li><a href="index-app-showcase.html"><div>Home - App Showcase</div></a></li>
+			</ul> -->
+			</li>
+			<li><a href="/getlist"><div><i class="icon-file-alt"></i>Products</div></a></li>
+			<li><a href="/turnkey?page=index"><div><i class="icon-th"></i>Solutions</div></a></li>
+			<li><a href="/#section-reviews"><div><i class="icon-star3"></i>Reviews</div></a></li>
+			<li><a href="/#section-about"><div><i class="icon-users2"></i>About Us</div></a></li>
+			<li><a href="/#section-contact"><div><i class="icon-map-marker2"></i>Contact Us</div></a></li>
+			<li><a href="/turnkey?page=album"><div><i class="icon-picture"></i>Gallery</div></a></li>
+			</ul>
+			<div id="top-cart">
+				<a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>{{lencart}}</span></a>
+				<div class="top-cart-content">
+				<div class="top-cart-title">
+				<h4>Shopping Cart</h4>
+				</div>
+				<div class="top-cart-items">
+				{%for c in cart%}
+				<div class="top-cart-item clearfix">
+				<div class="top-cart-item-desc">
+				{{c['name']}}
+				<span class="top-cart-item-price">{{c['pack']}}, {{c['cas']}}</span>
+				<span class="top-cart-item-quantity">Rs. {{c['price']}}<a href="/remove?pack={{c['pack']}}&cas={{c['cas']}}" class="remove" title="Remove this item"><font color="red"><u>Remove</u></font></a></span>
+				</div>
+				</div>
+				{% endfor %}
+				</div>
+				<div class="top-cart-action clearfix">
+				<span class="fleft top-checkout-price">Rs. {{total}}</span>
+				<a href="/checkout"><button class="button button-3d button-small nomargin fright">Checkout</button></a>
+				</div>
+				</div>
+				</div>
+			</nav>
+		</div>
+		</div>
+		</header>
+
+<section id="page-title">
+<div class="container clearfix">
+<h1>Cart</h1>
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/getlist">Product</a></li>
+<li class="breadcrumb-item active" aria-current="page">Cart</li>
+</ol>
+</div>
+</section>
+
+<section id="content">
+<div class="content-wrap">
+<div class="container clearfix">
+<div class="table-responsive">
+<table class="table cart">
+<thead>
+<tr>
+<th class="cart-product-remove">&nbsp;</th>
+<th class="cart-product-subtotal">CAS</th>
+<th class="cart-product-name">Chemical name</th>
+<th class="cart-product-quantity">Pack</th>
+<th class="cart-product-quantity">Quantity</th>
+<th class="cart-product-price">Price</th>
+<th class="cart-product-gst">GST</th>
+<th class="cart-product-hsn">Amount</th>
+</tr>
+</thead>
+<tbody>
+{% for d in cart%}
+<tr class="cart_item">
+<td class="cart-product-remove">
+<a href="/remove?pack={{d['pack']}}&cas={{d['cas']}}" class="remove" title="Remove this item"><i class="icon-trash2"></i></a>
+</td>
+<!-- <td class="cart-product-thumbnail">
+<a href="#"><img width="64" height="64" src="images/shop/thumbs/small/dress-3.jpg" alt="Pink Printed Dress"></a>
+</td> -->
+<td class="cart-product-subtotal">
+{{d['cas']}}
+</td>
+<td class="cart-product-name">
+{{d['name']}}
+</td>
+<td class="cart-product-quantity">
+{{d['pack']}}
+</td>
+<td class="cart-product-quantity">
+{{d['quantity']}}
+</td>
+
+<td class="cart-product-price">
+<span class="amount">{{d['price']}}</span>
+</td>
+<td class="cart-product-gst" id="gstcart">
+<span>{{d['gst']}}</span>
+</td>
+<td class="cart-product-hsn">
+<span>{{d['amount']}}</span>
+</td>
+</tr>
+{% endfor%}
+
+</tbody>
+</table>
+</div>
+<div class="row clearfix">
+<div class="col-lg-6 clearfix">
+<h4>Company Information</h4>
+<form action="/submit" method="POST">
+<div class="col_full">
+<input type="text" name="name" class="sm-form-control" placeholder="Name" value="{{name}}" />
+</div>
+<div class="col_full">
+<input type="text" class="sm-form-control" name="cname" placeholder="Company Name" value="{{cname}}" />
+</div>
+<div class="col_half">
+<input type="text" class="sm-form-control" name = "mob" placeholder="Mobile" value="{{mob}}"/>
+</div>
+<div class="col_half col_last">
+<input type="text" class="sm-form-control" name="email" placeholder="E-mail" value="{{email}}" />
+<input type="hidden" name="gstreduce" id= "gstreduce" value="" />
+</div>
+<input type="submit" name = "Submit" class="button button-3d nomargin button-black" />&nbsp;&nbsp;<a href="/getlist" class="button button-3d nomargin button-black">Back To Search</a>
+</form>
+</div>
+<div class="col-lg-6 clearfix">
+<h4>Cart Totals</h4>
+<div class="table-responsive">
+<table class="table cart">
+<tbody>
+<tr class="cart_item">
+<td class="cart-product-name">
+<strong>Cart Subtotal</strong>
+</td>
+<td class="cart-product-name">
+<span class="amount" id="subid">{{total}}</span>
+</td>
+</tr>
+<tr class="cart_item">
+<td class="cart-product-name">
+<strong>Gst</strong>
+</td>
+<td class="cart-product-name">
+<span class="amount" id='gst'>{{gsttotal}}</span>
+</td>
+</tr>
+<tr class="cart_item">
+<td class="cart-product-name">
+<strong>Total</strong>
+</td>
+<td class="cart-product-name">
+<span class="amount color lead" id= 'gtotal'><strong>{{gtotal}}</strong></span>
+</td>
+</tr>
+</tbody>
+<div id="checkbox_write">
+
+{% if gstreduce == 'true'%}
+<input type="checkbox" onclick="increasegst()" style="width: 20px;height: 20px" checked><strong><font size="3">&nbsp;&nbsp;Do you have GST concession certificate?</font></strong></input><br><br>
+{% else %}
+<input type="checkbox" onclick="reducegst()" style="width: 20px;height: 20px"><strong><font size="3">&nbsp;&nbsp;Do you have GST concession certificate?</font></strong></input><br><br>
+{% endif %}
+</div>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script src="/static/js/components/bs-switches.js"></script>
+
+<script src="/static/js/functions.js"></script>
+<script>
+
+jQuery(".bt-switch").bootstrapSwitch();
+
+</script>
+{% include 'footer.html'%}
+
+<div id="gotoTop" class="icon-angle-up"></div>
+
+<script data-cfasync="false" src="http://themes.semicolonweb.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+
+<script type="text/javascript">
+	function reducegst(){
+		var gtotal = "{{total}}";
+		gtotal = parseInt(gtotal);
+		gtotalT = (gtotal * 0.05) + gtotal;
+		var gst = gtotal * 0.05;
+		document.getElementById("gst").innerHTML = gst.toFixed(2);
+		document.getElementById("gtotal").innerHTML = '<strong>'+gtotalT.toFixed(2)+'</strong>';
+		document.getElementById("checkbox_write").innerHTML = '<input type="checkbox" onclick="increasegst()" style="width: 20px;height: 20px" checked><strong><font size="3">&nbsp;&nbsp;Do you have GST concession certificate?</font></strong></input><br><br>';
+		$('input[name=gstreduce]').val('true');
+
+	var ele= document.getElementsByClassName("cart-product-gst");
+    for(var i=1;i<ele.length;i++)
+    {
+      ele[i].innerHTML='5%';
+    }
+	}
+	function increasegst(){
+		var gtotal = "{{total}}";
+		gtotal = parseInt(gtotal);
+		gtotalT = (gtotal * 0.18) + gtotal;
+		var gst = gtotal * 0.18;
+		document.getElementById("gst").innerHTML = `{{gsttotal}}`;
+		document.getElementById("gtotal").innerHTML = '<strong>'+`{{gtotal}}`+'</strong>';
+		document.getElementById("checkbox_write").innerHTML = '<input type="checkbox" onclick="reducegst()" style="width: 20px;height: 20px"><strong><font size="3">&nbsp;&nbsp;Do you have GST concession certificate?</font></strong></input><br><br>';
+		$('input[name=gstreduce]').val('');
+
+		var ele= document.getElementsByClassName("cart-product-gst");
+    	for(var i=1;i<ele.length;i++)
+    	{
+      	ele[i].innerHTML='18%';
+    	}
+	}
+
+	
+</script>
+
+
+</body>
+
+
+</html>

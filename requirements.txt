@@ -1,0 +1,4 @@
+requests==2.18.4
+pandas==0.22.0
+Flask==0.12.2
+elasticsearch==7.5.1
